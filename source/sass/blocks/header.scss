@@ -1,0 +1,396 @@
+.header {
+  padding: 0 19.445%;
+
+  background-image: url("../img/bg-bike-main-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    background-position: 0 center;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-position: center top;
+  }
+}
+
+.header__nav {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  margin-bottom: 256px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 84px;
+
+    display: none;
+
+    border-bottom: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.header__nav-list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 88px;
+
+    background-color: #ffffff;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 100px 0;
+    padding-bottom: 124px;
+
+    flex-direction: column;
+  }
+}
+
+.header__nav-item {
+  @media (max-width: $mobile-width-only) {
+    background: #F6F6F6;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.header__nav-link {
+  display: block;
+
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #ffffff;
+  opacity: 0.7;
+
+  padding: 21px;
+  padding-bottom: 9px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 0;
+    padding-top: 18px;
+
+    color: #000000;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 16px;
+
+    color: #48494d;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+
+    position: relative;
+  }
+
+  &::before {
+    @media (max-width: $mobile-width-only) {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: 18px;
+      right: 18px;
+      background-image: url("../img/ico/arrow-right.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.header__title {
+  margin: 0;
+
+  font-size: 46px;
+  line-height: 64px;
+  font-weight: 700;
+  color: #ffffff;
+
+  margin-bottom: 24px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.header__mock {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-bottom: 240px;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 80px;
+  }
+}
+
+.header__info-text {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 300;
+  opacity: 0.8;
+  color: #ffffff;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.header__logo {
+  display: block;
+
+  margin-bottom: 31px;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 25px;
+    left: 21px;
+  }
+}
+
+.header__form {
+  margin-top: 4px;
+
+  width: 327px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+
+    position: absolute;
+    top: 410px;
+
+    width: 321px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+
+    padding: 0 16px;
+
+    top: 450px;
+  }
+}
+
+.header__form-title {
+  font-size: 17px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.005em;
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width) {
+    color: #000000;
+    font-size: 18px;
+
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 20px;
+  }
+}
+
+.header__form-fieldset {
+  margin: 0;
+  padding: 0;
+  border: hidden;
+}
+
+.header__info-wrapper {
+  width: 393px;
+
+  @media (max-width: $tablet-width) {
+    width: 435px;
+    padding-top: 134px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    padding: 0 16px;
+    padding-top: 120px;
+  }
+}
+
+.header__main-wrapper {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 413px;
+    width: 100%;
+  }
+}
+
+.header__form-input {
+  font-size: 15px;
+  line-height: 24px;
+  color: #1C1C1C;
+
+  padding: 10px 30px;
+  margin-bottom: 20px;
+
+  border: 1px solid #C9CCD4;
+  border-radius: 4px;
+
+  width: 100%;
+}
+
+.header__form-input::placeholder {
+  opacity: 0.5;
+}
+
+
+.header__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    @include reset-button;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #FE7865;
+    z-index: 2;
+  }
+}
+
+.header__toggle {
+  @include reset-button;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: $theme-color;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.header__toggle-line {
+  position: absolute;
+  top: 23px;
+  right: 12px;
+  width: 23px;
+  height: 1px;
+  font-size: 0;
+
+  background-color: #000000;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 23px;
+    height: 1px;
+    background-color: #000000;
+
+    transform-origin: 50% 50%;
+    transition: top 0.3s 0.3s, transform 0.3s;
+  }
+
+  &::after {
+    top: 7px;
+  }
+
+  &::before {
+    top: -7px;
+  }
+}
+
+.header--nojs .header__toggle {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header--nojs .header__nav {
+  @media (max-width: $tablet-width) {
+    margin-bottom: -50px;
+    display: flex;
+    position: relative;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: -100px;
+  }
+
+
+}
+
+.header--nojs  .header__form {
+  @media (max-width: $mobile-width-only) {
+    top: 900px;
+  }
+}
+
+.header--nojs .header__nav-list {
+  width: 100%;
+}
+
+.header--nojs {
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.header--opened .header__nav {
+  display: block;
+  position: absolute;
+}
+
+.header--opened .header__toggle {
+  background-color:#ffffff;
+}
+
+.header--opened .header__toggle-line {
+  background-color: #ffffff;
+
+  &::after,
+  &::before {
+    top: 0;
+    transition: top 0.3s, transform 0.3s  0.3s;
+    background-color: rgba(20, 21, 23, 0.2);
+  }
+
+  &::after {
+    transform: rotate(45deg);
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+}
