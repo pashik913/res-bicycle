@@ -1,0 +1,173 @@
+.bikes {
+  background-color: #f6f7f9;
+
+  margin-bottom: 147px;
+
+  padding: 0 109px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 52px;
+    margin-bottom: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 25px;
+  }
+}
+
+.bikes__main-title {
+  margin: 0;
+  padding-top: 150px;
+  margin-bottom: 60px;
+
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: #1f1f1f;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 41px;
+
+    margin-bottom: 30px;
+    padding-top: 50px;
+  }
+}
+
+.bikes__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+  }
+}
+
+.bikes__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+
+  margin-right: 30px;
+  margin-bottom: 50px;
+
+  &:nth-child(3n+2) {
+    margin-top: 30px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.bikes__img {
+  display: block;
+  border-radius: 10px;
+
+  @media (max-width: $tablet-width) {
+    width: 270px;
+  }
+}
+
+.bikes__img-wrapper {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 25px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 180px;
+    height: 180px;
+    top: 156px;
+    left: -50px;
+    background-image: url("../img/ico/icon-ellipse.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+
+    @media (max-width: $tablet-width) {
+      width: 127px;
+      height: 127px;
+      top: 203px;
+      left: -34px;
+    }
+
+    @media (max-width: $mobile-width-only) {
+      top: 204px;
+      left: -24px;
+    }
+  }
+
+  &--mountain {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -18px;
+      right: -18px;
+    }
+
+    &::before {
+      top: -18px;
+      left: -18px;
+    }
+
+    &::before,
+    &::after {
+      width: 47px;
+      height: 47px;
+      background-image: url("../img/ico/icon-square.svg");
+      z-index: 1;
+
+      @media (max-width: $tablet-width) {
+        content: none;
+      }
+    }
+  }
+
+  &--child {
+    &::before {
+      width: 95px;
+      height: 95px;
+      top: -32px;
+      left: unset;
+      right: -34px;
+      z-index: 1;
+
+      @media (max-width: $tablet-width) {
+        background-image: url("../img/ico/icon-ellipse-fat.svg");
+        width: 68px;
+        height: 68px;
+        top: -19px;
+        right: -23px;
+      }
+
+      @media (max-width: $mobile-width-only) {
+        top: -18px;
+        right: -16px;
+      }
+    }
+  }
+}
+
+.bikes__title {
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  font-weight: 600;
+
+  margin: 0;
+}
