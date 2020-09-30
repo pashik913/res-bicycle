@@ -111,6 +111,12 @@
       background-repeat: no-repeat;
     }
   }
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    transition: all 0.4s;
+  }
 }
 
 .header__title {
@@ -259,12 +265,34 @@
   border-radius: 4px;
 
   width: 100%;
+
+  outline: none;
+  border: solid 1px #C9CCD4;
+
+  &:hover,
+  &:focus,
+  &:active {
+    transition: all 0.4s;
+    border: solid 1px $theme-color;
+    outline: 1px solid $theme-color;
+  }
 }
 
 .header__form-input::placeholder {
   opacity: 0.5;
 }
 
+.header__form-button {
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $theme-color;
+    background-color: #ffffff;
+    transition: all 0.4s;
+    outline: 1px solid $theme-color;
+  }
+}
 
 .header__toggle {
   display: none;
