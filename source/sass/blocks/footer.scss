@@ -1,0 +1,157 @@
+.footer {
+  padding-top: 151px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 35px;
+    padding-top: 70px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0;
+    padding-top: 70px;
+  }
+}
+
+.footer__img-map {
+  display: block;
+}
+
+.footer__list {
+  @include reset-list;
+
+  margin: 40px 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 35px;
+    margin-top: 31px;
+  }
+}
+
+.footer__item {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 0;
+  }
+
+  &:not(:last-child) {
+    margin-right: 90px;
+
+    @media (max-width: $mobile-width-only) {
+      margin-right: 0;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: #1F1F1F;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.footer__text {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 25px;
+    padding: 0 25px;
+  }
+}
+
+.footer__link {
+  padding-left: 40px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+
+  position: relative;
+
+  display: block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 20px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-image: url("../img/ico/icon-mail.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    &::before {
+      width: 22px;
+      height: 24px;
+      background-image: url("../img/ico/icon-phone.svg");
+    }
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: $theme-color;
+    text-decoration: underline $theme-color;
+    transition: all 0.4s;
+  }
+}
+
+.footer__map-wrapper {
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+  }
+}
+
+.footer__map {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: none;
+
+  @media (max-width: $tablet-width) {
+    width: 698px;
+    height: 545px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 320px;
+    height: 250px;
+  }
+}

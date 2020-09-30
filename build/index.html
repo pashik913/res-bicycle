@@ -77,12 +77,11 @@
           </li>
         </ol>
       </section>
-      <section class="bikes" id="type-of-bikes">
+      <section class="bikes container" id="type-of-bikes">
         <h2 class="bikes__main-title">Виды велосипедов</h2>
         <ul class="bikes__list">
           <li class="bikes__item">
             <div class="bikes__img-wrapper">
-              <!-- <img class="bikes__img" src="img/road-bike-desktop@1x.jpg" width="342" height="503" alt="Дорожный велосипед"> -->
               <picture class="features__picture-wrapper">
                 <source type="image/webp" srcset="img/road-bike-tablet@1x.webp 1x, img/road-bike-tablet@2x.webp 2x" media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/road-bike-desktop@1x.webp 1x, img/road-bike-desktop@2x.webp 2x">
@@ -95,7 +94,6 @@
           </li>
           <li class="bikes__item">
             <div class="bikes__img-wrapper bikes__img-wrapper--mountain">
-
               <picture class="features__picture-wrapper">
                 <source type="image/webp" srcset="img/mountain-bike-tablet@1x.webp 1x, img/mountain-bike-tablet@2x.webp 2x" media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/mountain-bike-desktop@1x.webp 1x, img/mountain-bike-desktop@2x.webp 2x">
@@ -108,7 +106,6 @@
           </li>
           <li class="bikes__item bikes__item--child">
             <div class="bikes__img-wrapper bikes__img-wrapper--child">
-              <!-- <img class="bikes__img" src="img/child-bike-desktop@1x.jpg" width="342" height="503" alt="Дорожный велосипед"> -->
               <picture class="features__picture-wrapper">
                 <source type="image/webp" srcset="img/child-bike-tablet@1x.webp 1x, img/child-bike-tablet@2x.webp 2x" media="(max-width: 1023px)">
                 <source type="image/webp" srcset="img/child-bike-desktop@1x.webp 1x, img/child-bike-desktop@2x.webp 2x">
@@ -121,23 +118,50 @@
           </li>
         </ul>
       </section>
-      <section id="video-about-bikes">
-        <h2>Видео про велосипеды</h2>
-        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <img src="img/video-bike-desktop@1x.jpg" width="929" height="522" alt="Видео о велосипеде">
-        <button></button>
+      <section class="video" id="video-about-bikes">
+        <div class="video__mock container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <!-- <img class="video__img" src="img/video-bike-desktop@1x.jpg" width="929" height="522" alt="Видео о велосипеде"> -->
+          <div class="video__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/video-bike-mobile@1x.webp 1x, img/video-bike-mobile@2x.webp 2x" media="(max-width: 767.9px)">
+              <source type="image/webp" srcset="img/video-bike-tablet@1x.webp 1x, img/video-bike-tablet@2x.webp 2x" media="(max-width: 1023px)">
+              <source type="image/webp" srcset="img/video-bike-desktop@1x.webp 1x, img/video-bike-desktop@2x.webp 2x">
+
+              <source srcset="img/video-bike-mobile@1x.jpg 1x, img/video-bike-mobile@2x.jpg 2x" media="(max-width: 767.9px)">
+              <source srcset="img/video-bike-tablet@1x.jpg 1x, img/video-bike-tablet@2x.jpg 2x" media="(max-width: 1023px)">
+              <img class="video__img" src="img/video-bike-desktop@1x.jpg" width="929" height="522" alt="Видео о велосипедaх" srcset="img/video-bike-desktop@2x.jpg 2x">
+            </picture>
+            <button class="video__button-play" type="button" aria-label="Отправить данные">
+              <img class="video__button-img" src="img/ico/icon-play.svg" width="65" height="65" alt="Воспроизведение">
+            </button>
+          </div>
+        </div>
       </section>
     </main>
-    <footer id="contact-us">
-      <h2>Как нас найти?</h2>
-      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <img src="img/map-desktop@1x.jpg" width="957" height="530" alt="Мы находимся здесь">
-      <ul>
-        <li>
-          <a href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
+    <footer class="footer container" id="contact-us">
+      <h2 class="footer__title">Как нас найти?</h2>
+      <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <!-- <img class="footer__img-map" src="img/map-desktop@1x.jpg" width="957" height="530" alt="Мы находимся здесь"> -->
+      <div class="footer__map-wrapper">
+        <picture>
+          <source type="image/webp" srcset="img/img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" media="(max-width: 767.9px)">
+          <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(max-width: 1023px)">
+          <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+
+          <source srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(max-width: 767.9px)">
+          <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(max-width: 1023px)">
+          <img class="footer__img-map" src="img/map-desktop@1x.jpg" width="957" height="530" alt="Мы находимся здесь" srcset="img/map-desktop@2x.jpg 2x">
+        </picture>
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.32089461617356!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2s!4v1601463333331!5m2!1sru!2s" width="957" height="530" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a>
         </li>
-        <li>
-          <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+        <li class="footer__item">
+          <a class="footer__link footer__link--phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
         </li>
       </ul>
     </footer>

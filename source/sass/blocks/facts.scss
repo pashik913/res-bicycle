@@ -1,7 +1,7 @@
 .facts {
   padding: 0 9.514%;
 
-  margin-bottom: 130px;
+  margin-bottom: 90px;
 
   @media (max-width: $tablet-width) {
     padding: 0 13.803%;
@@ -80,13 +80,9 @@
 
   padding: 0 10px;
 
-  // &:not(:first-child) {
-  //   padding-left: 10px;
-  // }
-
-  // &:not(:last-child) {
-  //   padding-right: 10px;
-  // }
+  &:nth-child(3n+2) {
+    margin-bottom: 40px;
+  }
 
   @media (max-width: $tablet-width) {
     width: 50%;
