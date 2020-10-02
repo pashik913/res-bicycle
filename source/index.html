@@ -50,7 +50,7 @@
                 <input class="header__form-input" type="tel" placeholder="Введите Ваш номер телефона">
               </label>
             </fieldset>
-            <button class="header__form-button button">Подобрать велосипед мечты</button>
+            <button class="header__form-button button" type="button">Подобрать велосипед мечты</button>
           </form>
         </div>
       </div>
@@ -77,7 +77,7 @@
           </li>
         </ol>
       </section>
-      <section class="bikes container" id="type-of-bikes">
+      <section class="bikes" id="type-of-bikes">
         <h2 class="bikes__main-title">Виды велосипедов</h2>
         <ul class="bikes__list">
           <li class="bikes__item">
@@ -122,18 +122,17 @@
         <div class="video__mock container">
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-          <!-- <img class="video__img" src="img/video-bike-desktop@1x.jpg" width="929" height="522" alt="Видео о велосипеде"> -->
           <div class="video__wrapper">
             <picture>
-              <source type="image/webp" srcset="img/video-bike-mobile@1x.webp 1x, img/video-bike-mobile@2x.webp 2x" media="(max-width: 767.9px)">
+              <source type="image/webp" srcset="img/video-bike-mobile@1x.webp 1x, img/video-bike-mobile@2x.webp 2x" media="(max-width: 767px)">
               <source type="image/webp" srcset="img/video-bike-tablet@1x.webp 1x, img/video-bike-tablet@2x.webp 2x" media="(max-width: 1023px)">
               <source type="image/webp" srcset="img/video-bike-desktop@1x.webp 1x, img/video-bike-desktop@2x.webp 2x">
 
-              <source srcset="img/video-bike-mobile@1x.jpg 1x, img/video-bike-mobile@2x.jpg 2x" media="(max-width: 767.9px)">
+              <source srcset="img/video-bike-mobile@1x.jpg 1x, img/video-bike-mobile@2x.jpg 2x" media="(max-width: 767px)">
               <source srcset="img/video-bike-tablet@1x.jpg 1x, img/video-bike-tablet@2x.jpg 2x" media="(max-width: 1023px)">
               <img class="video__img" src="img/video-bike-desktop@1x.jpg" width="929" height="522" alt="Видео о велосипедaх" srcset="img/video-bike-desktop@2x.jpg 2x">
             </picture>
-            <button class="video__button-play" type="button" aria-label="Отправить данные">
+            <button class="video__button-play" type="button" aria-label="Воспроизвести видео о велосипеде">
               <img class="video__button-img" src="img/ico/icon-play.svg" width="65" height="65" alt="Воспроизведение">
             </button>
           </div>
@@ -143,14 +142,13 @@
     <footer class="footer container" id="contact-us">
       <h2 class="footer__title">Как нас найти?</h2>
       <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-      <!-- <img class="footer__img-map" src="img/map-desktop@1x.jpg" width="957" height="530" alt="Мы находимся здесь"> -->
       <div class="footer__map-wrapper">
         <picture>
-          <source type="image/webp" srcset="img/img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" media="(max-width: 767.9px)">
+          <source type="image/webp" srcset="img/img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" media="(max-width: 767px)">
           <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(max-width: 1023px)">
           <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
 
-          <source srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(max-width: 767.9px)">
+          <source srcset="img/map-mobile@1x.jpg 1x, img/map-mobile@2x.jpg 2x" media="(max-width: 767px)">
           <source srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x" media="(max-width: 1023px)">
           <img class="footer__img-map" src="img/map-desktop@1x.jpg" width="957" height="530" alt="Мы находимся здесь" srcset="img/map-desktop@2x.jpg 2x">
         </picture>
