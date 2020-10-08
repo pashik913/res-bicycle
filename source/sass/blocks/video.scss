@@ -17,6 +17,8 @@
 
   @media (max-width: $mobile-width-only) {
     padding-top: 84px;
+    text-align: left;
+    margin-left: -2px;
   }
 }
 
@@ -99,7 +101,7 @@
   @include reset-button;
 
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
 

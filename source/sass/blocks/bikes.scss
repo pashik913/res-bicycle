@@ -1,7 +1,7 @@
 .bikes {
   background-color: #f6f7f9;
 
-  margin-bottom: 147px;
+  margin-bottom: 98px;
 
   padding: 0 109px;
 
@@ -12,12 +12,13 @@
 
   @media (max-width: $mobile-width-only) {
     padding: 0 25px;
+    padding-bottom: 12px;
   }
 }
 
 .bikes__main-title {
   margin: 0;
-  padding-top: 150px;
+  padding-top: 152px;
   margin-bottom: 60px;
 
   text-align: center;
@@ -44,7 +45,7 @@
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -53,30 +54,54 @@
   }
 }
 
+
 .bikes__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
 
-  margin-right: 30px;
+  margin: 0 15px;
   margin-bottom: 50px;
 
-  &:nth-child(3n+2) {
-    margin-top: 30px;
+
+  &--child {
+    padding-right: 11px;
+    margin-top: -10px;
 
     @media (max-width: $tablet-width) {
       margin-top: 0;
     }
   }
 
+  &--padding {
+    padding-left: 34px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 0;
+    }
+  }
+
+  &:nth-child(3n+2) {
+    margin-left: 16px;
+    margin-top: 29px;
+
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+      margin-left: 0;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     margin-right: 0;
     padding-right: 30px;
+    margin-left: 30px;
   }
 
   @media (max-width: $mobile-width-only) {
     padding-right: 0;
+    margin: 0;
+    margin-bottom: 41px;
   }
 }
 
@@ -92,7 +117,7 @@
 .bikes__img-wrapper {
   position: relative;
   z-index: 0;
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 
   &::before {
     position: absolute;
@@ -100,7 +125,7 @@
     width: 180px;
     height: 180px;
     top: 156px;
-    left: -50px;
+    left: -60px;
     background-image: url("../img/ico/icon-ellipse.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -123,8 +148,8 @@
     &::after {
       position: absolute;
       content: "";
-      bottom: -18px;
-      right: -18px;
+      bottom: -23px;
+      right: -23px;
     }
 
     &::before {
@@ -151,7 +176,7 @@
       height: 95px;
       top: -32px;
       left: unset;
-      right: -34px;
+      right: -36px;
       z-index: 1;
 
       @media (max-width: $tablet-width) {
