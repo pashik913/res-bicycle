@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  background-color: #1C1C1C;
+  background-color: #1c1c1c;
 
   margin-bottom: 150px;
 
@@ -54,7 +54,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding: 100px 0;
-    padding-bottom: 350px;
+    padding-bottom: 300px;
 
     flex-direction: column;
   }
@@ -62,7 +62,7 @@
 
 .header__nav-item {
   @media (max-width: $mobile-width-only) {
-    background: #F6F6F6;
+    background: #f6f6f6;
   }
 
   &:not(:last-child) {
@@ -266,21 +266,20 @@
   }
 }
 
-.header__form-input {
+.header__form-fieldset input {
   font-size: 15px;
   line-height: 24px;
-  color: #1C1C1C;
+  color: #1c1c1c;
 
   padding: 11px 30px;
   margin-bottom: 20px;
 
-  border: 1px solid #C9CCD4;
+  border: 1px solid #c9ccd4;
   border-radius: 4px;
 
   width: 100%;
 
   outline: none;
-  border: solid 1px #C9CCD4;
 
   &:hover,
   &:focus,
@@ -312,25 +311,9 @@
 }
 
 .header__toggle {
-  display: none;
-
-  @media (max-width: $tablet-width) {
-    @include reset-button;
-
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    background-color: #FE7865;
-    z-index: 2;
-  }
-}
-
-.header__toggle {
   @include reset-button;
 
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
@@ -341,6 +324,14 @@
 
   @media (max-width: $tablet-width) {
     display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: $theme-color;
+    z-index: 2;
   }
 }
 
@@ -393,11 +384,9 @@
   @media (max-width: $mobile-width-only) {
     margin-bottom: -100px;
   }
-
-
 }
 
-.header--nojs  .header__form {
+.header--nojs .header__form {
   @media (max-width: $mobile-width-only) {
     top: 900px;
   }
@@ -425,7 +414,7 @@
 }
 
 .header--opened .header__toggle {
-  background-color:#ffffff;
+  background-color: #ffffff;
 }
 
 .header--opened .header__toggle-line {

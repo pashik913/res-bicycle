@@ -4,12 +4,14 @@ var headerToggle = document.querySelector('.header__toggle');
 
 pageHeader.classList.remove('header--nojs');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('header--closed')) {
-    pageHeader.classList.remove('header--closed');
-    pageHeader.classList.add('header--opened');
-  } else {
-    pageHeader.classList.add('header--closed');
-    pageHeader.classList.remove('header--opened');
-  }
-});
+if (document.contains(pageHeader) && document.contains(headerToggle)) {
+  headerToggle.addEventListener('click', function () {
+    if (pageHeader.classList.contains('header--closed')) {
+      pageHeader.classList.remove('header--closed');
+      pageHeader.classList.add('header--opened');
+    } else {
+      pageHeader.classList.add('header--closed');
+      pageHeader.classList.remove('header--opened');
+    }
+  });
+}
