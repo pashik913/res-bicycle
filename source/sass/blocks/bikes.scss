@@ -5,6 +5,11 @@
 
   padding: 0 109px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   @media (max-width: $tablet-width) {
     padding: 0 52px;
     margin-bottom: 0;
@@ -43,6 +48,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  max-width: 1186px;
 
   @media (max-width: $tablet-width) {
     padding-bottom: 18px;

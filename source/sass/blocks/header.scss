@@ -256,6 +256,8 @@
 }
 
 .header__main-wrapper {
+  max-width: 880px;
+
   @media (max-width: $tablet-width) {
     margin-bottom: 413px;
     width: 100%;

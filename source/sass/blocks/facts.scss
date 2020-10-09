@@ -49,6 +49,8 @@
   flex-wrap: wrap;
   justify-content: center;
 
+  max-width: 1166px;
+
   @media (max-width: $mobile-width-only) {
     padding: 0 28px;
   }
