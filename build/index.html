@@ -44,10 +44,10 @@
             <fieldset class="header__form-fieldset">
               <h3 class="header__form-title">Заполните поля ниже и мы подберем велосипед Вашей мечты</h3>
               <label for="name">
-                <input id="name" type="text" placeholder="Введите Ваше Имя">
+                <input id="name" name="name" type="text" placeholder="Введите Ваше Имя" required="" pattern="[A-Z][a-z]{1,15}|[А-Я][а-я]{1,15}" minlength="3" maxlength="25" title="Имя пользователя должно содержать как минумум 1 заглавную букву, например: Сергей или Jack">
               </label>
               <label for="tel">
-                <input id="tel" type="tel" placeholder="Введите Ваш номер телефона">
+                <input id="tel" name="tel" type="tel" placeholder="Введите Ваш номер телефона" required="" pattern="^\+7\d{3}\d{7}$" minlength="11" maxlength="12" title="Ваш номер должен состоять из минимум 11 цифр и быть формата: +79148888888 или 89788888888 или 79208888888">
               </label>
             </fieldset>
             <button class="header__form-button button" type="submit">Подобрать велосипед мечты</button>
@@ -141,7 +141,7 @@
       <p class="footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="footer__map-wrapper">
         <picture>
-          <source type="image/webp" srcset="img/img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" media="(max-width: 767px)">
+          <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" media="(max-width: 767px)">
           <source type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" media="(max-width: 1023px)">
           <source type="image/webp" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
 

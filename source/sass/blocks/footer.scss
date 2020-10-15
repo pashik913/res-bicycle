@@ -61,6 +61,7 @@
 .footer__title {
   margin: 0;
   margin-bottom: 30px;
+  margin-left: -11px;
 
   font-weight: 600;
   font-size: 30px;
@@ -72,6 +73,7 @@
     font-size: 24px;
 
     margin-bottom: 20px;
+    margin-left: 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -83,6 +85,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0 440px;
+  margin-left: -13px;
 
   font-size: 17px;
   line-height: 31px;
@@ -91,6 +94,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 20px;
+    margin-left: 0;
     padding: 0;
   }
 

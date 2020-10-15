@@ -42,7 +42,7 @@
   @include reset-list;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   z-index: 2;
 
@@ -54,7 +54,7 @@
 
   @media (max-width: $mobile-width-only) {
     padding: 100px 0;
-    padding-bottom: 300px;
+    padding-bottom: 100vh;
 
     flex-direction: column;
   }
@@ -412,6 +412,10 @@
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
   }
 }
 
