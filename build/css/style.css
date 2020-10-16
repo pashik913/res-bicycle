@@ -760,13 +760,14 @@ img {
 
 @media (max-width: 767px) {
   .header--opened .header__nav {
-    position: absolute; } }
+    position: fixed; } }
 
 .header--opened .header__toggle {
   background-color: #ffffff; }
 
 .header--opened .header__toggle-line {
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  position: fixed; }
   .header--opened .header__toggle-line::after, .header--opened .header__toggle-line::before {
     top: 0;
     -webkit-transition: top 0.3s, -webkit-transform 0.3s  0.3s;
@@ -825,8 +826,7 @@ img {
       flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center;
-  max-width: 1166px; }
+          justify-content: center; }
   @media (max-width: 767px) {
     .facts__list {
       padding: 0 28px; } }

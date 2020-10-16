@@ -415,7 +415,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    position: absolute;
+    position: fixed;
   }
 }
 
@@ -425,6 +425,7 @@
 
 .header--opened .header__toggle-line {
   background-color: #ffffff;
+  position: fixed;
 
   &::after,
   &::before {
